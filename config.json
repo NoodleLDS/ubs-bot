@@ -1,0 +1,268 @@
+{
+  "unidades": {
+    "capela": {
+      "nome": "ESF Sebastião Lima da Costa — Capelinha do Barreiro",
+      "endereco": "Rua Rodolfo Costa Júnior, 8 — Capelinha do Barreiro, Uberaba/MG",
+      "telefone": "(34) 3338-1123",
+      "horario": "Segunda a Sexta, das 07:00 às 17:00",
+      "maps": "https://maps.google.com/?q=Rua+Rodolfo+Costa+Junior,+8,+Capelinha+do+Barreiro,+Uberaba,+MG"
+    },
+    "baixa": {
+      "nome": "Apoio UBS José Pedro de Oliveira — Distrito da Baixa",
+      "endereco": "Rua Manuel da Silva Rosa, 55 — Bairro da Baixa, Uberaba/MG",
+      "telefone": "(34) 3326-3071",
+      "horario": "Segunda a Sexta, das 07:00 às 17:00",
+      "maps": "https://maps.google.com/?q=Rua+Manuel+da+Silva+Rosa,+55,+Baixa,+Uberaba,+MG"
+    }
+  },
+  "equipe": "ESF — Sebastião Lima da Costa",
+  "profissionais": [
+    {
+      "nome": "Natalia",
+      "funcao": "Médica",
+      "dias_capela": "Terça e Sextas Alternadas",
+      "dias_baixa": "Quinta e Sextas Alternadas",
+      "fixo_capela": ["terca"],
+      "fixo_baixa": ["quinta"],
+      "sexta_alternada": true
+    },
+    {
+      "nome": "Gabrielle Christine",
+      "funcao": "Médica (Mais Médicos)",
+      "dias_capela": "Quarta e Quinta",
+      "dias_baixa": "Segunda e Terça",
+      "fixo_capela": ["quarta", "quinta"],
+      "fixo_baixa": ["segunda", "terca"],
+      "sexta_alternada": false,
+      "_obs": "Folga fixa na sexta — horário dedicado ao programa Mais Médicos"
+    },
+    {
+      "nome": "Michel Vanderlei",
+      "funcao": "Dentista",
+      "dias_capela": "Terça, Quinta e Sextas Alternadas",
+      "dias_baixa": "Segunda, Quarta e Sextas Alternadas",
+      "fixo_capela": ["terca", "quinta"],
+      "fixo_baixa": ["segunda", "quarta"],
+      "sexta_alternada": true
+    },
+    {
+      "nome": "Lucas Daniel",
+      "funcao": "Enfermeiro",
+      "dias_capela": "Quarta, Quinta e Sextas Alternadas",
+      "dias_baixa": "Segunda, Terça e Sextas Alternadas",
+      "fixo_capela": ["quarta", "quinta"],
+      "fixo_baixa": ["segunda", "terca"],
+      "sexta_alternada": true
+    },
+    {
+      "nome": "Queren Hapuque",
+      "funcao": "Psicóloga",
+      "dias_capela": "Segunda, Quinta e Sextas Alternadas",
+      "dias_baixa": "Terça, Quarta e Sextas Alternadas",
+      "fixo_capela": ["segunda", "quinta"],
+      "fixo_baixa": ["terca", "quarta"],
+      "sexta_alternada": true
+    },
+    {
+      "nome": "Gilda Mayumi",
+      "funcao": "Fisioterapeuta",
+      "dias_capela": "Uma vez ao mês — Confirmar na Unidade",
+      "dias_baixa": "Uma vez ao mês — Confirmar na Unidade",
+      "fixo_capela": [],
+      "fixo_baixa": [],
+      "sexta_alternada": false
+    }
+  ],
+  "programas": {
+    "hiperdia": {
+      "nome": "HiperDia — Hipertensão e Diabetes",
+      "descricao": "Acompanhamento de pacientes com hipertensão arterial e/ou diabetes mellitus.",
+      "dia": "Terça-feira",
+      "horario": "08:00 às 10:00",
+      "orientacoes": [
+        "Trazer cartão do HiperDia",
+        "Trazer receita médica atualizada",
+        "Trazer medicamentos em uso para conferência",
+        "Estar em jejum caso precise de exames",
+        "Não suspender medicamentos no dia da consulta"
+      ]
+    },
+    "prenatal": {
+      "nome": "Pré-Natal",
+      "descricao": "Acompanhamento da gestante durante toda a gravidez, com consultas mensais (ou mais frequentes conforme a idade gestacional).",
+      "dia": "Todos os dias",
+      "horario": "Agendar com a recepção",
+      "orientacoes": [
+        "Trazer cartão da gestante",
+        "Trazer exames anteriores",
+        "Trazer cartão de vacina",
+        "Comparecer em jejum se houver coleta de exames",
+        "Anotar dúvidas para discutir na consulta"
+      ]
+    },
+    "puericultura": {
+      "nome": "Puericultura — Saúde da Criança",
+      "descricao": "Acompanhamento do crescimento e desenvolvimento de crianças de 0 a 2 anos.",
+      "dia": "Livre Demanda",
+      "horario": "07:00 às 17:00",
+      "orientacoes": [
+        "Trazer caderneta da criança",
+        "Trazer cartão de vacina",
+        "Informar alimentação atual da criança",
+        "Trazer exames anteriores, se houver"
+      ]
+    },
+    "vacinacao": {
+      "nome": "Vacinação",
+      "descricao": "Sala de vacina disponível para todas as idades conforme o Calendário Nacional de Vacinação.",
+      "dia": "Segunda a Sexta",
+      "horario": "08:00 às 14:30",
+      "orientacoes": [
+        "Trazer cartão de vacina e documento com foto",
+        "Informar se está com febre ou doença aguda",
+        "Gestantes devem informar a idade gestacional",
+        "Crianças devem estar acompanhadas do responsável"
+      ]
+    },
+    "saude_mulher": {
+      "nome": "Saúde da Mulher — Preventivo",
+      "descricao": "Coleta de exame preventivo (Papanicolau) para mulheres de 25 a 64 anos.",
+      "dia": "Dias em que Enfermeiro Lucas e Dra. Natalia estiverem na mesma unidade",
+      "horario": "Verificar disponibilidade na recepção",
+      "orientacoes": [
+        "Não estar menstruada",
+        "Evitar relações sexuais 48h antes",
+        "Não usar duchas ou cremes vaginais 48h antes",
+        "Trazer documento e cartão do SUS"
+      ]
+    }
+  },
+  "exames": {
+    "sangue": {
+      "nome": "Coleta de Sangue (Exames Laboratoriais)",
+      "dia": "Segunda a Sexta",
+      "horario": "07:00 às 09:00",
+      "preparo": [
+        "Jejum de 8 a 12 horas (pode beber água)",
+        "Não consumir bebida alcoólica 72h antes",
+        "Evitar exercício físico intenso no dia anterior",
+        "Tomar medicamentos normalmente, salvo orientação médica",
+        "Trazer pedido médico, documento e cartão do SUS"
+      ]
+    }
+  },
+  "farmacia": {
+    "descricao": "A dispensação de medicamentos é realizada toda sexta-feira pela manhã pelo carro da farmácia municipal, nas duas unidades.",
+    "dia": "Sexta-feira",
+    "horario": "A partir das 09:00",
+    "opcoes": [
+      "Deixar a receita médica com a recepcionista durante a semana (confirme se a medicação está disponível e se pode aguardar até sexta)",
+      "Comparecer na unidade a partir das 09:00 na sexta-feira e aguardar o carro do farmacêutico"
+    ],
+    "documentos": [
+      "Receita médica atualizada (dentro da validade)",
+      "Documento com foto (RG ou CNH)",
+      "Cartão do SUS"
+    ]
+  },
+  "grupos": [
+    {
+      "nome": "Grupo de Gestantes",
+      "emoji": "🤰",
+      "descricao": "Encontros para troca de experiências, orientações sobre gravidez, parto, amamentação e cuidados com o recém-nascido.",
+      "frequencia": "📅 Placeholder — confirmar dia e horário com a equipe",
+      "responsavel": "Enf. Lucas Daniel e equipe"
+    },
+    {
+      "nome": "Grupo de Hipertensos e Diabéticos",
+      "emoji": "❤️",
+      "descricao": "Acompanhamento em grupo para pacientes do HiperDia, com orientações sobre alimentação, exercícios e uso correto da medicação.",
+      "frequencia": "📅 Placeholder — confirmar dia e horário com a equipe",
+      "responsavel": "Enf. Lucas Daniel e equipe"
+    },
+    {
+      "nome": "Grupo de Tabagismo",
+      "emoji": "🚭",
+      "descricao": "Programa de apoio para quem deseja parar de fumar, com acompanhamento profissional e suporte em grupo.",
+      "frequencia": "📅 Placeholder — confirmar dia e horário com a equipe",
+      "responsavel": "Placeholder — confirmar responsável"
+    }
+  ],
+  "emergencia": {
+    "upas": [
+      {"nome": "UPA Mirante (Dr. Humberto Ferreira)", "telefone": "(34) 3332-0209", "endereco": "Av. Leopoldino de Oliveira, 534 — Parque do Mirante"},
+      {"nome": "UPA São Benedito", "telefone": "(34) 3333-2900", "endereco": "Rua Major Eustáquio, 1030 — São Benedito"}
+    ],
+    "hospitais_gestante": [
+      "HC-UFTM (Hospital de Clínicas da UFTM)",
+      "Hospital Regional de Uberaba",
+      "Hospital Mario Palmério"
+    ],
+    "samu": "192",
+    "bombeiros": "193"
+  },
+  "faq": [
+    {"pergunta": "Como faço o Cartão SUS?", "resposta": "Compareça à UBS com RG, CPF e comprovante de residência. O cartão é feito na hora, gratuitamente."},
+    {"pergunta": "Preciso de encaminhamento para especialista?", "resposta": "Sim. Primeiro passe por consulta na UBS e, se necessário, o profissional faz o encaminhamento pela Central de Regulação."},
+    {"pergunta": "Posso ser atendido em outra UBS?", "resposta": "O ideal é a UBS da sua área. Para trocar, procure a recepção da UBS desejada com comprovante de residência."},
+    {"pergunta": "A UBS atende à noite ou fim de semana?", "resposta": "Não. Segunda a sexta, 07:00 às 17:00. Fora desse horário, procure a UPA ou ligue 192."},
+    {"pergunta": "Como consigo atestado médico?", "resposta": "O atestado é fornecido pelo médico durante a consulta, quando há necessidade clínica."},
+    {"pergunta": "Quais vacinas estão disponíveis?", "resposta": "Todas do Calendário Nacional de Vacinação. Traga o cartão de vacina. Sala de vacina: seg. a sex., 08:00 às 14:30."},
+    {"pergunta": "Como agendar consulta?", "resposta": "Por telefone ou presencialmente. Capelinha: (34) 3338-1123 | Baixa: (34) 3326-3071."},
+    {"pergunta": "Posso renovar receita sem consulta?", "resposta": "Não. A renovação exige avaliação médica. Agende consulta com o médico da equipe."}
+  ],
+  "documentos_cadastro": {
+    "titulo": "Documentos para Cadastro na UBS",
+    "descricao": "Para se cadastrar e ser acompanhado pela equipe, traga os seguintes documentos:",
+    "lista": [
+      "Documento de identidade (RG) — de todos os membros da família",
+      "CPF — de todos os membros da família",
+      "Cartão SUS (se já tiver)",
+      "Comprovante de residência atualizado",
+      "Certidão de nascimento (para crianças)",
+      "Cartão de vacina (crianças e adultos)"
+    ]
+  },
+  "saude": {
+    "educacao": {
+      "titulo": "Dicas de Saúde e Prevenção",
+      "topicos": [
+        {"emoji": "🍎", "titulo": "Alimentação Saudável", "dica": "Prefira alimentos naturais como frutas, verduras, legumes e grãos. Evite ultraprocessados, excesso de sal e açúcar. Beba pelo menos 2 litros de água por dia."},
+        {"emoji": "🏃", "titulo": "Atividade Física", "dica": "Pratique pelo menos 30 minutos de atividade física por dia, 5 vezes por semana. Caminhada, dança e alongamento são ótimas opções."},
+        {"emoji": "💊", "titulo": "Uso Correto de Medicamentos", "dica": "Tome os medicamentos nos horários certos, conforme a receita. Nunca pare o tratamento por conta própria."},
+        {"emoji": "🩺", "titulo": "Prevenção é o Melhor Remédio", "dica": "Mantenha exames e vacinas em dia. Consultas de rotina ajudam a detectar problemas cedo."}
+      ]
+    },
+    "bucal": {
+      "titulo": "Saúde Bucal",
+      "profissional": "Dr. Michel Vanderlei — Dentista",
+      "descricao": "O cuidado com a saúde bucal é essencial para a saúde geral. Nossa equipe oferece atendimento odontológico preventivo e curativo.",
+      "servicos": ["Consulta odontológica", "Limpeza (profilaxia)", "Restaurações", "Extrações", "Orientação de escovação", "Aplicação de flúor", "Atendimento a gestantes (pré-natal odontológico)"],
+      "dicas": ["Escove os dentes após as refeições e antes de dormir", "Use fio dental diariamente", "Troque a escova a cada 3 meses", "Evite excesso de açúcar", "Visite o dentista a cada 6 meses"],
+      "agendamento": "Agende sua consulta na recepção da unidade nos dias de atendimento do dentista."
+    },
+    "mental": {
+      "titulo": "Saúde Mental",
+      "profissional": "Queren Hapuque — Psicóloga",
+      "descricao": "Cuidar da saúde mental é tão importante quanto cuidar da saúde física. Nossa psicóloga atende na UBS para acolhimento, escuta qualificada e acompanhamento.",
+      "quando_procurar": ["Tristeza persistente ou falta de motivação", "Ansiedade ou preocupação excessiva", "Dificuldade para dormir", "Problemas nos relacionamentos", "Luto ou perdas difíceis", "Estresse intenso", "Uso de álcool ou outras substâncias"],
+      "como_agendar": "Converse com qualquer profissional da equipe ou na recepção. Não precisa de encaminhamento médico para a primeira consulta.",
+      "mensagem": "Pedir ajuda é um ato de coragem. Você não precisa enfrentar sozinho(a). Estamos aqui para ajudar. 💛"
+    },
+    "idoso": {
+      "titulo": "Saúde do Idoso (60+)",
+      "descricao": "O acompanhamento regular na UBS é fundamental para garantir qualidade de vida na terceira idade.",
+      "cuidados": ["Consultas de rotina a cada 6 meses", "Manter vacinas em dia (gripe, pneumocócica, COVID)", "Acompanhamento de pressão e glicemia", "Avaliação de risco de quedas", "Acompanhamento nutricional", "Saúde mental e socialização"],
+      "direitos": ["Atendimento prioritário em serviços de saúde", "Medicamentos gratuitos pelo SUS", "Acompanhamento domiciliar quando necessário", "Caderneta de Saúde da Pessoa Idosa"],
+      "dica": "Traga a Caderneta de Saúde da Pessoa Idosa em todas as consultas. Se não tiver, solicite na UBS."
+    },
+    "fisioterapia": {
+      "titulo": "Fisioterapia",
+      "profissional": "Gilda Mayumi — Fisioterapeuta",
+      "descricao": "Atendimento de fisioterapia disponível na UBS para reabilitação e orientação de exercícios, com visitas mensais da fisioterapeuta.",
+      "servicos": ["Avaliação fisioterapêutica", "Orientação de exercícios domiciliares", "Reabilitação pós-cirúrgica (orientações)", "Orientação postural", "Exercícios para idosos", "Encaminhamento para serviços especializados"],
+      "agendamento": "O atendimento acontece uma vez ao mês em cada unidade. Confirme a data com a recepção.",
+      "dica": "Traga exames de imagem e laudos anteriores na consulta."
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# Ambiente
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Banco de dados
+*.db
+*.sqlite3
+
+# Logs
+*.log
