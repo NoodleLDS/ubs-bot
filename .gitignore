@@ -1,5 +1,5 @@
 # Ambiente
-
+.env
 .venv/
 venv/
 __pycache__/
@@ -12,10 +12,6 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
-
-# Banco de dados
-*.db
-*.sqlite3
 
 # Logs
 *.log
