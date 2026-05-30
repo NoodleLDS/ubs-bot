@@ -1,31 +1,29 @@
-# 🏥 WhatsApp Bot for Public Health Units (UBS) — Brazil's SUS/ESF
+# WhatsApp Bot for Public Health Units (UBS) — Brazil's SUS/ESF
 
 An open-source, production-ready WhatsApp bot built for **primary healthcare units** (UBS) in Brazil's Unified Health System (SUS). Designed for **Family Health Strategy (ESF)** teams serving rural and underserved communities where WhatsApp is often the only communication channel available.
 
-Built entirely through pair-programming with **Claude AI (Anthropic)** — from architecture to deployment.
-
 ---
 
-## 🎯 The Problem
+## The Problem
 
 In rural Brazil, many communities have limited cell signal — often only WiFi or low-bandwidth radio signal works. Phone calls don't go through, but **WhatsApp does**. Patients need basic health information (schedules, preparation for exams, emergency contacts, vaccination hours) but can only reach the health unit during business hours.
 
-## 💡 The Solution
+## The Solution
 
 A WhatsApp bot that provides **24/7 automated access** to health unit information through interactive menus. No data collection, no clinical advice — just essential information that empowers patients to access healthcare services.
 
 ---
 
-## ✨ Features
+## Features
 
 ### Level 1 — Information
-- **📅 Who's working today** — dynamic daily schedule with automatic Friday rotation logic
-- **📍 Unit locations** — addresses, phone numbers, Google Maps links
-- **👩‍⚕️ Full team directory** — all professionals with their days at each unit
-- **💊 Pharmacy** — medication pickup schedule and instructions
-- **📄 Registration documents** — what to bring for enrollment
-- **🚨 Emergency guidance** — when to go to the ER vs. UBS, emergency phone numbers, hospital list for pregnant women
-- **❓ FAQ** — 8 common questions with auto-splitting for WhatsApp character limits
+- **Who's working today** — dynamic daily schedule with automatic Friday rotation logic
+- **Unit locations** — addresses, phone numbers, Google Maps links
+- **Full team directory** — all professionals with their days at each unit
+- **Pharmacy** — medication pickup schedule and instructions
+- **Registration documents** — what to bring for enrollment
+- **Emergency guidance** — when to go to the ER vs. UBS, emergency phone numbers, hospital list for pregnant women
+- **FAQ** — 8 common questions with auto-splitting for WhatsApp character limits
 
 ### Level 2 — Health Programs & Education
 - **HiperDia** (hypertension/diabetes), **Prenatal**, **Childcare**, **Vaccination**, **Women's Health**
@@ -35,11 +33,11 @@ A WhatsApp bot that provides **24/7 automated access** to health unit informatio
 - **Women's Health** — automatically calculates which days nurse + doctor are at the same unit
 
 ### Level 3 — Intelligence
-- **⭐ Patient satisfaction survey** — rating + comments, stored in SQLite
-- **📢 Campaign alerts** — admin creates announcements that appear in every patient's menu
-- **📊 Usage metrics** — most accessed routes, messages per day, analytics dashboard
-- **🔐 WhatsApp admin panel** — manage the bot via WhatsApp with password authentication
-- **🤖 AI-powered Q&A** — placeholder ready for Claude API integration
+- **Patient satisfaction survey** — rating + comments, stored in SQLite
+- **Campaign alerts** — admin creates announcements that appear in every patient's menu
+- **Usage metrics** — most accessed routes, messages per day, analytics dashboard
+- **WhatsApp admin panel** — manage the bot via WhatsApp with password authentication
+- **AI-powered Q&A** — placeholder ready for Claude API integration
 
 ### Security & Resilience
 - HMAC webhook signature verification
@@ -53,7 +51,7 @@ A WhatsApp bot that provides **24/7 automated access** to health unit informatio
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐
@@ -95,7 +93,7 @@ A WhatsApp bot that provides **24/7 automated access** to health unit informatio
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 bot_ubs/
@@ -135,7 +133,7 @@ bot_ubs/
 
 ---
 
-## 🚀 Reproducing This Project
+## Reproducing This Project
 
 ### Prerequisites
 - Python 3.11+
@@ -182,7 +180,7 @@ This is the most complex part. Follow carefully:
 5. Someone must answer the landline and note the 6-digit code
 6. Enter the code to verify
 
-⚠️ **Important**: If the number is already registered on WhatsApp Business app, you must either:
+ **Important**: If the number is already registered on WhatsApp Business app, you must either:
 - Delete the account from the app first (Settings > Account > Delete), OR
 - Use a different number
 
@@ -238,7 +236,7 @@ ngrok http 8000
 5. Click **"Verify and Save"**
 6. Below, under **"Webhook Fields"**, click **"Manage"** and subscribe to **"messages"**
 
-⚠️ **Critical**: The `messages` field must be subscribed on your **production** WhatsApp Business Account, not just the test account. If messages aren't arriving, run this command to force-subscribe:
+ **Critical**: The `messages` field must be subscribed on your **production** WhatsApp Business Account, not just the test account. If messages aren't arriving, run this command to force-subscribe:
 
 ```bash
 # PowerShell (Windows)
@@ -278,7 +276,7 @@ Replace `YOUR_WABA_ID` with your WhatsApp Business Account ID.
 | `DB_PATH` | `/data/bot_ubs.db` |
 | `PYTHONUNBUFFERED` | `1` |
 
-5. Deploy → wait for `🟢 Bot UBS v3.1 pronto!`
+5. Deploy → wait for `Bot UBS v3.1 pronto!`
 
 6. Copy your Render URL (e.g., `https://your-bot.onrender.com`)
 
@@ -287,7 +285,7 @@ Replace `YOUR_WABA_ID` with your WhatsApp Business Account ID.
    https://your-bot.onrender.com/webhook
    ```
 
-⚠️ **Render free tier**: The server sleeps after 15 minutes of inactivity. First message after sleep takes ~30 seconds. For always-on, consider Render paid ($7/month) or Railway.
+ **Render free tier**: The server sleeps after 15 minutes of inactivity. First message after sleep takes ~30 seconds. For always-on, consider Render paid ($7/month) or Railway.
 
 ---
 
@@ -309,7 +307,7 @@ python admin.py
 
 ---
 
-## 🔐 Admin Panel
+##  Admin Panel
 
 ### Via WhatsApp
 Send to the bot's number:
@@ -343,7 +341,7 @@ curl -X POST "https://your-bot.onrender.com/admin/aviso" \
 
 ---
 
-## 🔧 Customization
+##  Customization
 
 ### Adding a New Menu Option
 
@@ -379,22 +377,7 @@ Edit `config.json` — no code changes needed. The bot reads all content from th
 
 ---
 
-## 🤖 Built with Claude AI
-
-This entire project was built through pair-programming with **Claude AI (Anthropic)**. The development process:
-
-1. **Architecture Design** — Claude designed the modular handler-based architecture, session management, and security layers
-2. **Implementation** — All Python code was written collaboratively, with Claude generating complete files and the developer testing/deploying
-3. **Code Review & Hardening** — Claude performed security audits identifying 15 vulnerabilities across 5 categories, then fixed all of them
-4. **Meta Integration** — Claude provided step-by-step guidance for Meta Developer setup, webhook configuration, and troubleshooting
-5. **Deployment** — Claude configured Docker, Render.com deployment, and production environment variables
-6. **Content Creation** — Claude generated all patient-facing messages, FAQ content, emergency guidance, and WhatsApp Business catalog descriptions
-
-The AI was used as a **copilot** — the developer (a nurse) provided all domain expertise about healthcare workflows, patient needs, and unit operations. Claude translated that knowledge into working software.
-
----
-
-## 📋 Troubleshooting
+## Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
@@ -407,19 +390,10 @@ The AI was used as a **copilot** — the developer (a nurse) provided all domain
 
 ---
 
-## 📄 License
+## License
 
 MIT License — feel free to adapt for your own health unit.
 
 ---
 
-## 🙏 Acknowledgments
-
-- **Brazil's SUS** (Unified Health System) — for providing universal healthcare
-- **Anthropic's Claude AI** — for making this development possible through AI pair-programming
-- **Meta's WhatsApp Cloud API** — for the free tier that makes this viable for public health
-- **Render.com** — for free hosting that keeps the bot running
-
----
-
-*Built with ❤️ for public health by Lucas Daniel — ESF Nurse, Uberaba/MG, Brazil*
+*Built with love for public health by Lucas Daniel — ESF Nurse, Uberaba/MG, Brazil*
